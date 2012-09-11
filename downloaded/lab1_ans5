@@ -1,0 +1,9 @@
+#!/bin/bash
+#replaces a given word in a given file using another word
+replace()
+{
+cat $3
+sed -i 's/'$1'/'$2'/g' $3
+cat $3
+return
+}
